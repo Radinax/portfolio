@@ -34,7 +34,15 @@ export default [
       "NATIONAL EXPERIMENTAL POLYTECHNIC UNIVERSITY ANTONIO JOSÉ DE SUCRE – UNEXPO – PUERTO ORDAZ",
   },
   {
-    position: "Web Developer",
+    position: "Frontend Web Developer",
+    from: "June 2016",
+    to: "October 2016",
+    description:
+      "Developed a fullstack application with a team that used HTML, CSS, Javascript, PHP and MySQL for a group of architects who needed a custom CMS to update their site. Used Bootstrap and custom CSS for the layout and components. Focused more on the UI and the logic of the CMS",
+    company: "Freelance",
+  },
+  {
+    position: "Frontend Web Developer",
     from: "December 2018",
     to: "June 2019",
     description:

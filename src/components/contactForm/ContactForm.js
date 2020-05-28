@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div id="contact">
+    <div className="mb-5" id="contact">
       <h2 className="mb-5 mt-5 text-center">Contact Me!</h2>
       <div className="col-md-8 m-auto">
         <form method="POST" action="https://formspree.io/mdowepoo">
@@ -41,14 +41,13 @@ const ContactForm = () => {
           </div>
           <input type="text" name="_gotcha" style={{ display: "none" }} />
           <input
-            className="btn btn-block mt-4 mb-4"
+            className="btn btn-block mt-4 mb-5"
             type="submit"
             value="Send"
             style={{ backgroundColor: "#001f3f", color: "white" }}
           />
         </form>
       </div>
-      <hr className="m-0" />
     </div>
   );
 };

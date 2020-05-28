@@ -3,27 +3,44 @@ import Covid from "../../assets/covid-project.png";
 import DevConnector from "../../assets/dev-connector.png";
 import Blog from "../../assets/blog.png";
 import Domo from "../../assets/domoviz.png";
+import Property from "../../assets/property-brothers.png";
+import Bitcoin from "../../assets/bitcoin.png";
 
 const projectInfo = [
   {
     title: "Covid-19 Venezuela and Worldwide data chart",
     component: Covid,
     link: "https://radinax.github.io/covid-19-chart/",
+    github: "https://github.com/Radinax/covid-19-chart",
   },
   {
     title: "Social Network for Developers",
     component: DevConnector,
     link: "https://secret-ocean-02865.herokuapp.com/",
+    github: "https://github.com/Radinax/mern-social-network",
   },
   {
     title: "React Blog",
     component: Blog,
     link: "https://radinax.github.io/React-Personal-Blog-Gatsby/",
+    github: "https://github.com/Radinax/React-Personal-Blog-Gatsby",
   },
   {
     title: "Website for Architects",
     component: Domo,
     link: "http://www.domoviz.com/",
+  },
+  {
+    title: "Sample of Website made for Property brothers on Tour",
+    component: Property,
+    link: "https://radinax.github.io/react-promote-artist-work-tour-latam/",
+    github: "https://github.com/Radinax/react-promote-artist-work-tour-latam",
+  },
+  {
+    title: "Bitcoin chart",
+    component: Bitcoin,
+    link: "https://radinax.github.io/React-Bitcoin-Chart/",
+    github: "https://github.com/Radinax/React-Bitcoin-Chart",
   },
 ];
 
@@ -40,7 +57,12 @@ const Projects = () => {
           <img className="img-fluid" src={project.component} alt="" />
         </div>
       </a>
-      <div className="text-center">{project.title}</div>
+      <div className="text-center">
+        <a className="social-icon" href={project.github}>
+          <i className="fab fa-github"></i>
+        </a>{" "}
+        {project.title}
+      </div>
     </div>
   ));
 
